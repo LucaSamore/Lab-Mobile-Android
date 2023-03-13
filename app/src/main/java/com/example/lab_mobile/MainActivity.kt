@@ -22,8 +22,7 @@ class MainActivity : ComponentActivity() {
                 val configuration = LocalConfiguration.current
                 // A surface container using the 'background' color from the theme
                 Surface(
-                    modifier = Modifier.size(configuration.screenWidthDp.dp/2,
-                        configuration.screenHeightDp.dp),
+                    modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //Greeting("Android")
@@ -32,7 +31,8 @@ class MainActivity : ComponentActivity() {
                     //HorizontalLayout(configuration = configuration)
                     //BoxConstraintsLayout()
                     //ListNames()
-                    ScrollableList()
+                    //ScrollableList()
+                    ScaffoldFunction()
                 }
             }
         }
